@@ -25,7 +25,7 @@ RUN cargo build \
 FROM balenalib/$BALENA_ARCH-alpine:3.14-run
 WORKDIR /app
 
-RUN install_packages alsa-lib-dev pulseaudio-dev
+RUN install_packages libgcc alsa-lib-dev pulseaudio-dev
 
 COPY --from=librespot-builder /app/librespot-src/target/release/librespot /usr/bin/librespot
 
