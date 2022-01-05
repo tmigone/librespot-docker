@@ -12,10 +12,11 @@ __Note:__ These images were built to be used mainly with [balenaOS](https://www.
 
 ## Usage
 
-Images are built and published to Docker Hub: https://hub.docker.com/r/tmigone/librespot
-Available images are:
+Images are built and published to [Docker Hub](https://hub.docker.com/r/tmigone/librespot). The following images are available:
 - With alsa-backend: `tmigone/librespot:<version>`
 - With pulseaudio-backend: `tmigone/librespot:<version>-pulseaudio`
+
+For a detailed list of available tags visit: https://hub.docker.com/r/tmigone/librespot/tags
 
 **docker-compose.yml**
 
