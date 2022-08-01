@@ -1,10 +1,10 @@
 ARG BALENA_ARCH=%%BALENA_ARCH%%
 
 # Build process from: https://git.alpinelinux.org/aports/tree/testing/librespot/APKBUILD
-FROM balenalib/$BALENA_ARCH-alpine:3.14 as librespot-builder
+FROM balenalib/$BALENA_ARCH-alpine:edge as librespot-builder
 WORKDIR /app
 
-ARG LIBRESPOT_VERSION=0.3.1
+ARG LIBRESPOT_VERSION=0.4.2
 
 RUN install_packages alsa-lib-dev pulseaudio-dev cargo curl
 
